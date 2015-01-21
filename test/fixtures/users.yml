@@ -4,3 +4,9 @@ jason:
   profile_name: "Jseifer"
   email: "Jseifer@seifer.com"
 
+jim:
+  first_name: "Jim"
+  last_name: "Hoskins"
+  profile_name: "jimhoskins"
+  email: "Jim@example.com"
+
