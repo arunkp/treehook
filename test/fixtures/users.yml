@@ -1,8 +1,6 @@
-joe:
-  first_name: "Joe"
-  last_name: "martini"
-  profile_name: "joe"
-  email: "joe@jay.com"
-  password: "passme133"
-  password_confirmation: "passme133"
+jason:
+  first_name: "Jason"
+  last_name: "Seifer"
+  profile_name: "Jseifer"
+  email: "Jseifer@seifer.com"
 
