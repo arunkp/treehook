@@ -4,4 +4,31 @@ class UserTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
+  test "a user should enter a first name" do
+  	user = User.new
+  	assert !user.save
+  	assert !user.errors[:first_name].empty?
+  end
+  test "a user should enter a last name" do
+  	user = User.new
+  	assert !user.save
+  	assert !user.errors[:last_name].empty?
+  end
+  test "a user should enter a profile name" do
+  	user = User.new
+  	assert !user.save
+  	assert !user.errors[:profile_name].empty?
+  end
+  test "a user should have a unique profile name" do
+  	user = User.new
+  	user.profile_name = "joe"
+  	user.first_name = "joe"
+  	user.last_name = "martini"
+  	user.password = "password"
+  	user.email = "joe@jay.com"
+  	user.password_confirmation = "password"
+  	assert !user.save
+  	assert !user.errors[:profile_name].empty?
+  end
+
 end
